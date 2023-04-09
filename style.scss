@@ -4,6 +4,41 @@
 
 // 본문 css 시작
 
-
+#wrap{
+  height: 100vh;
+  max-width: 1400px;
+  header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 100px;
+    height: 50px;
+    .header{
+      h1{
+        display: inline-block;
+        a{
+          width: 150px;
+        }
+      }
+    }
+    .pc-nav{
+      ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        margin-top: 15px;
+      }
+    } 
+    .mo-nav{
+     // display: none;
+     
+    }
+  }
+}
 
 
