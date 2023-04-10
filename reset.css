@@ -58,6 +58,10 @@ table {
   border-spacing: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Evergreen", "Roboto";
   src: url(./Evergreen.otf);
