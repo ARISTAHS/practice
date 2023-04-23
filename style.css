@@ -4,47 +4,66 @@
 @import "reset.css";
 /* 본문 css 시작 */
 #wrap {
-  height: 100vh;
   width: 100%;
   overflow: hidden;
 }
 #wrap header {
-  height: 50px;
   width: 100%;
-  margin-top: 10px;
+  position: fixed;
+  z-index: 10;
+  background: #fff;
 }
 #wrap header .header {
   display: block;
+}
+#wrap header .header .header_inner {
+  width: 1200px;
+  margin: 0 auto;
+  height: 60px;
+}
+#wrap header .header .header_inner h1 {
   float: left;
-  padding-left: 20px;
 }
-#wrap header .header h1 {
-  display: inline-block;
-}
-#wrap header .header h1 a {
+#wrap header .header .header_inner h1 a {
   width: 150px;
+  padding-top: 8px;
 }
-#wrap header .pc-nav {
+#wrap header .header .header_inner .pc-nav {
+  width: 1050px;
+  height: 60px;
   overflow: hidden;
 }
-#wrap header .pc-nav ul {
+#wrap header .header .header_inner .pc-nav ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  margin-top: 15px;
+  gap: 100px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
-#wrap header::after {
+#wrap header .header .header_inner::after {
   content: "";
   display: block;
   clear: both;
 }
+#wrap #visual {
+  width: 2000px;
+  height: 1080px;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
 #wrap #content {
-  width: 100%;
+  width: 1200px;
   margin: 30px auto 0;
 }
-#wrap #content article {
-  margin-bottom: 50px;
+#wrap #content section.brand ul.brand_img {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }/*# sourceMappingURL=style.css.map */
