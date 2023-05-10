@@ -5,29 +5,19 @@
 /* 본문 css 시작 */
 
 #wrap{
-  // height: 100vh;
   width: 100%;
   overflow: hidden;
   header{
-    // display: flex;
-    // flex-direction: row;
-    // flex-wrap: wrap;
-    // align-content: center;
-    // justify-content: center;
-    //gap: 100px;
-    // height: 50px;
     width: 100%;
     position: fixed;
     z-index: 10;
     background: #fff;
     .header{
       display: block;
-      // padding-left: 20px;
       .header_inner{
         width: 1200px;
         margin: 0 auto;
         height: 60px;
-        // float: left;
         h1{
           float: left;
           a{
@@ -67,15 +57,41 @@
     left: 50%;
     transform: translateX(-50%);
     overflow: hidden;
+    ul{
+      li{
+        img{}
+        span{}
+      }
+    }
+    .contral{
+      a{}
+    }
+    .page_number{
+      span{
+
+        &.play{
+          
+        }
+      }
+    }
   }
   #content{
     width: 1200px;
     margin:  30px auto 0;
     section{
+      margin-bottom: 100px;
       &.brand{
-        h3{}
+        padding-bottom: 50px;
+        background: rgba($color: #000000, $alpha: 0.6);
+        h3{
+          font-size: 30px;
+          letter-spacing: 5px;
+          margin-bottom: 10px;
+        }
         div{
           &.brand_content{
+            margin-bottom: 20px;
+            line-height: 25px;
             p{
 
             }
@@ -86,9 +102,23 @@
           display: flex;
           align-items: center;
           flex-direction: row;
+          justify-content: space-evenly;
             li{
               img{
-                // width: 320px;
+                width: 320px;
+                &.second_img{
+                  display: none;
+                }
+              }
+              &:hover{
+                img{
+                  &.first_img{
+                    display: none;
+                  }
+                  &.second_img{
+                  display: block;
+                }
+              }
               }
             }
           }

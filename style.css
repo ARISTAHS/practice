@@ -62,8 +62,37 @@
   width: 1200px;
   margin: 30px auto 0;
 }
+#wrap #content section {
+  margin-bottom: 100px;
+}
+#wrap #content section.brand {
+  padding-bottom: 50px;
+  background: rgba(0, 0, 0, 0.6);
+}
+#wrap #content section.brand h3 {
+  font-size: 30px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+#wrap #content section.brand div.brand_content {
+  margin-bottom: 20px;
+  line-height: 25px;
+}
 #wrap #content section.brand ul.brand_img {
   display: flex;
   align-items: center;
   flex-direction: row;
+  justify-content: space-evenly;
+}
+#wrap #content section.brand ul.brand_img li img {
+  width: 320px;
+}
+#wrap #content section.brand ul.brand_img li img.second_img {
+  display: none;
+}
+#wrap #content section.brand ul.brand_img li:hover img.first_img {
+  display: none;
+}
+#wrap #content section.brand ul.brand_img li:hover img.second_img {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
