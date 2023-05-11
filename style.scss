@@ -64,13 +64,34 @@
       }
     }
     .contral{
-      a{}
+      a{
+        &.pre{}
+        &.next{}
+      }
     }
     .page_number{
+      position: absolute;
+      left: 50%;
+      bottom: 10%;
+      transform: translate(-50%,-10%);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 25px;
       span{
-
-        &.play{
-          
+        &.btn{
+          display: block;
+          width: 10px;
+          height: 25px;
+          background-color: #fff;
+          border-radius: 20%;
+        }
+        &.click{
+          font-family: 'fontawesome';
+          overflow: hidden;
+          i{
+            font-size: 32px;
+          }
         }
       }
     }
