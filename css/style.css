@@ -58,6 +58,21 @@
   transform: translateX(-50%);
   overflow: hidden;
 }
+#wrap #visual ul {
+  position: relative;
+}
+#wrap #visual ul li {
+  position: absolute;
+}
+#wrap #visual ul li span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f8f8f8;
+  font-size: 30px;
+  letter-spacing: 10px;
+}
 #wrap #visual .page_number {
   position: absolute;
   left: 50%;

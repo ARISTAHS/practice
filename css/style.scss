@@ -58,9 +58,18 @@
     transform: translateX(-50%);
     overflow: hidden;
     ul{
+      position: relative;
       li{
-        img{}
-        span{}
+        position: absolute;
+        span{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          color: #f8f8f8;
+          font-size: 30px;
+          letter-spacing: 10px;
+        }
       }
     }
     .contral{
