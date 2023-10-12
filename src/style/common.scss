@@ -1,5 +1,5 @@
 body{
-  width: 1920px;
+  // width: 1920px;
   position: relative;
   *{
     box-sizing:border-box;
@@ -11,8 +11,8 @@ body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,
 table,th,td,tr,textarea,button,form,figure,figcaption{margin:0;padding:0;}
 
 /* a 링크 초기화 */
-a {text-decoration: none;}
-a:hover {text-decoration: none;}
+a, a:hover {text-decoration: none; color: #333;}
+// a:hover {text-decoration: none;}
 
 /* 폰트 초기화 */
 body, input, textarea, select, button, table 
@@ -44,3 +44,10 @@ table{border-collapse: collapse;}
 
 // hidden 설정
 .hidden { position: absolute; left: -1000%; top: 0; width: 1px; height: 1px; overflow: hidden; color: #fff;}
+
+section{
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

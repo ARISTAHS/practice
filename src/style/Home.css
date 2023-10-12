@@ -1,0 +1,126 @@
+@charset "UTF-8";
+body {
+  position: relative;
+}
+body * {
+  box-sizing: border-box;
+}
+
+/* 여백 초기화 */
+body, div, ul, li, dl, dd, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select,
+table, th, td, tr, textarea, button, form, figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+/* a 링크 초기화 */
+a, a:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+/* 폰트 초기화 */
+body, input, textarea, select, button, table {
+  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* 폰트 스타일 초기화 */
+em, address {
+  font-style: normal;
+}
+
+em {
+  color: red;
+}
+
+/* 블릿기호 초기화 */
+ul, li, ol {
+  list-style: none;
+}
+
+/* 제목 태그 초기화 */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+/* 버튼초기화 */
+button {
+  border: 0;
+}
+
+/* 반응형 이미지 */
+img, video {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  vertical-align: top;
+}
+
+img {
+  border: 0;
+}
+
+/* table */
+table {
+  border-collapse: collapse;
+}
+
+.hidden {
+  position: absolute;
+  left: -1000%;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  color: #fff;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#section1 {
+  background-color: #999;
+}
+#section1 div.home p {
+  font-size: 3.5em;
+  letter-spacing: 2px;
+  color: #f8f8f8;
+  text-align: center;
+}
+#section1 div.home p strong {
+  background: linear-gradient(to bottom, transparent 50%, rgba(72, 103, 232, 0.8509803922) 50%) 0 -7px;
+}
+#section1 a.scrollDown {
+  position: absolute;
+  left: 50%;
+  bottom: 70px;
+  font-size: 20px;
+  transform: translateX(-50%);
+  font-style: italic;
+  color: #fff;
+  z-index: 3;
+}
+#section1 a.scrollDown .downIcon {
+  display: inline-block;
+  animation: scrollDown infinite 0.7s linear;
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+}/*# sourceMappingURL=Home.css.map */
