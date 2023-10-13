@@ -1,0 +1,32 @@
+@use './common.scss';
+
+#section2{
+  h3{}
+  div.profile{
+    div.photo{}
+    div.text{
+      div.name{}
+      dl{
+        dt{}
+        dd{}
+        &:nth-of-type(3){
+          dt{}
+          dd{
+            p{}
+          }
+        }
+      } 
+      div.skill{
+        //img 스킬 css 
+      }
+      ul.popol{
+        li{
+          a{
+            
+          }
+        }
+      }
+
+    }
+  }
+}
