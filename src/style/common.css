@@ -57,7 +57,6 @@ img, video {
 }
 
 img {
-  width: 100%;
   vertical-align: top;
 }
 
@@ -85,4 +84,5 @@ section {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }/*# sourceMappingURL=common.css.map */

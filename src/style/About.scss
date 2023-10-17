@@ -3,30 +3,59 @@
 #section2{
   h3{}
   div.profile{
-    div.photo{}
-    div.text{
-      div.name{}
-      dl{
-        dt{}
-        dd{}
-        &:nth-of-type(3){
+    div.imgContent{
+      // 크기 확인용
+      border:  1px solid red;
+      width: 100px;
+      height: 100px;
+    }
+    div.textContent{
+      div.detailProfile{
+        div.name{
+          position: relative;
+          display: inline-block;
+          font-size: 2.5em;
+          font-weight: 500;
+          color: #333;
+          padding-bottom: 20px;
+          &::before{
+            content: '정호석';
+            display: block;
+            font-size: 1.3rem;
+            position: absolute;
+            right: -20%;
+            top: -10%;
+            transform: translate(20%,10%);
+          }
+          &:hover{
+            color: #1068c2;
+            transition: color .5s ease-in-out;  
+          } 
+        }
+        dl{
           dt{}
-          dd{
-            p{}
+          dd{}
+          &:nth-of-type(3){
+            dt{}
+            dd{
+              p{}
+            }
+          }
+        } 
+        div.skill{
+          //img 스킬 css 
+        }
+        ul.popol{
+          li{
+            a{
+              
+            }
           }
         }
-      } 
-      div.skill{
-        //img 스킬 css 
       }
-      ul.popol{
-        li{
-          a{
-            
-          }
-        }
-      }
+      button{
 
+      }
     }
   }
 }

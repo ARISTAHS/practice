@@ -57,7 +57,6 @@ img, video {
 }
 
 img {
-  width: 100%;
   vertical-align: top;
 }
 
@@ -85,4 +84,32 @@ section {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
+}
+
+#section2 div.profile div.imgContent {
+  border: 1px solid red;
+  width: 100px;
+  height: 100px;
+}
+#section2 div.profile div.textContent div.detailProfile div.name {
+  position: relative;
+  display: inline-block;
+  font-size: 2.5em;
+  font-weight: 500;
+  color: #333;
+  padding-bottom: 20px;
+}
+#section2 div.profile div.textContent div.detailProfile div.name::before {
+  content: "정호석";
+  display: block;
+  font-size: 1.3rem;
+  position: absolute;
+  right: -20%;
+  top: -10%;
+  transform: translate(20%, 10%);
+}
+#section2 div.profile div.textContent div.detailProfile div.name:hover {
+  color: #1068c2;
+  transition: color 0.5s ease-in-out;
 }/*# sourceMappingURL=About.css.map */
