@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 // import '../style/About.scss';
 // import { FaAnglesDown } from "react-icons/fa6";
 import Content from '../components/AboutDate';
+import Button from '../components/AboutButton';
 
 function About(){
 
@@ -27,23 +28,27 @@ function About(){
 				<div className="imgContent">
 					{show ? (<img src="" alt="Image 2" />) : (<img src="" alt="Image 1" />)}
 				</div>
+
 				<div className="textContent">
 					{/* {show ? <p>상세한 내용</p> : <p>간단한 내용</p>} */}
 					<Content isText={show} />
 					{/* 상세 내용, 간단한 내용을 별도 컴포넌트에서 불러오기 */}
 				</div>
-				<button onClick={clickButton}>
+
+				{/* 버튼 부분 별도의 컴포넌트 추출 진행 아래 주석은 추출하기 이전 코드 */}
+				{/* <button onClick={clickButton}>
 					{show ? (
-						<div> 
-							<span>간단히 보기</span>
+						<div className='preClick'> 
+							<span>돌아가기</span>
 						</div>
 						) : 
 						(
-						<div>
+						<div className='nextClick'>
 							<span>자세히 보기</span>
 						</div>
 						)}
-				</button>
+				</button> */}
+				<Button show={show} onClick={clickButton} />
 			</div>
 
 		</section>

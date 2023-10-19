@@ -27,16 +27,16 @@ function Content({ isText }) {
         </dl>
 
         <ul class="popol">
-						<li>
-							<a target="_blank" href="#">스토리보드<FaClipboard /></a>
-						</li>
-						<li>
-							<a target="_blank" href="#">온라인이력서<FaAddressCard /></a>
-						</li>
-						<li>
-							<a target="_blank" href="https://github.com/ARISTAHS/www.git">GitHub<FaGithub /></a>
-						</li>
-					</ul>
+          <li>
+            <a target="_blank" href="#">스토리보드<FaClipboard /></a>
+          </li>
+          <li>
+            <a target="_blank" href="#">온라인이력서<FaAddressCard /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/ARISTAHS">GitHub<FaGithub /></a>
+          </li>
+        </ul>
 
       </div>) 
       : (
