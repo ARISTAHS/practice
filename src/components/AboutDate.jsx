@@ -43,10 +43,8 @@ function Content({ isText }) {
 
       </div>) 
       : (
-        <div>
-          <p>안녕하세요, 정호석입니다. <br/>
-          <strong>자세히 보기</strong>를 클릭해주세요!</p>
-        </div>
+        <p className="introShort">안녕하세요, 정호석입니다. <br/>
+        <strong>자세히 보기</strong>를 클릭해주세요!</p>
       )}
     </div> 
   );

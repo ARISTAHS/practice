@@ -92,7 +92,6 @@ section {
   align-items: center;
   position: relative;
   justify-content: space-around;
-  width: 70vh;
 }
 #section2 div.profile.profile-left {
   display: flex;
@@ -103,6 +102,9 @@ section {
   border: 1px solid red;
   width: 100px;
   height: 100px;
+}
+#section2 div.profile div.textContent {
+  padding-left: 30px;
 }
 #section2 div.profile div.textContent div.detailProfile div.name {
   position: relative;
@@ -125,6 +127,13 @@ section {
   color: #1068c2;
   transition: color 0.5s ease-in-out;
 }
+#section2 div.profile div.textContent div.detailProfile dl {
+  margin-bottom: 20px;
+  border-top: 1px dashed #ccc;
+}
+#section2 div.profile div.textContent div.detailProfile dl dt {
+  font-size: 20px;
+}
 #section2 div.profile div.textContent div.detailProfile dl:nth-of-type(3) dd ul.skills {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -145,6 +154,8 @@ section {
   border-radius: 50%;
 }
 #section2 div.profile div.textContent div.detailProfile ul.popol {
+  border-top: 1px dashed #ccc;
+  padding-top: 15px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -170,8 +181,18 @@ section {
   border-radius: 40px;
   color: #fff;
 }
+#section2 div.profile div.textContent .introShort {
+  margin: 10px 0;
+}
+#section2 div.profile button {
+  background-color: #fff;
+}
+#section2 div.profile button div {
+  padding: 10px;
+  border: 1px solid;
+}
 #section2 div.profile button div.preClick {
   position: absolute;
-  bottom: 0px;
-  right: 0px;
+  bottom: 0%;
+  left: 0%;
 }/*# sourceMappingURL=About.css.map */
