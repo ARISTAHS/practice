@@ -3,27 +3,26 @@ import '../style/About.scss'
 import { GiFencer } from "react-icons/gi";
 import { FaClipboard, FaAddressCard, FaGithub } from "react-icons/fa6";
 import skillIcon from "./skill";
+import {meDate} from "./Date";
+
 
 function Content({ isText }) {
   return (
     <div>{isText ? 
       (
       <div className="detailProfile">
-        <div class="name">JEONG HO SEOK</div>
+        <div class="name">{meDate.name}</div>
         <dl>
           <dt><GiFencer/>CONTACT</dt>
-          <dd>010-9120-1013 // paran0907@naver.com</dd>
+          <dd>{meDate.phone} // {meDate.email}</dd>
         </dl>
         <dl>
           <dt><GiFencer/>SUPPORT PART</dt>
-          <dd>Web Publisher & Front-end Developer</dd>
+          <dd>{meDate.part}</dd>
         </dl>
         <dl>
           <dt><GiFencer/>SKILL</dt>
           <dd>
-            {/* <p>HTML5, CSS3(SCSS), JavaScript, jQuery, 비동기처리(AJAX/JSON), <br />
-            반응형 Framework(Bootstrap), CMS(WordPress), SPA(VUE), Github, Photoshop
-            </p> */}
             {skillIcon()}
             {/* skill 아이콘을 별도 컴포넌트에 배열로 작성하고 해당 컴포넌트를 별도의 함수로 정의된 컴포넌트 넣어서 호출 */}
           </dd>
@@ -31,10 +30,12 @@ function Content({ isText }) {
 
         <ul class="popol">
           <li>
-            <a target="_blank" title="스토리보드 새창에 열림" href="#">스토리보드<FaClipboard /></a>
+            <a target="_blank" title="스토리보드 새창에 열림" href="https://jhs0907.cafe24.com/profile/Storyboard.pdf">스토리보드<FaClipboard /></a>
+            {/* etc 파일안과 연동 여부 확인할것, 임시로 주소창 기입 */}
           </li>
           <li>
-            <a target="_blank" title="온라인이력서 새창에 열림" href="#">온라인 이력서<FaAddressCard /></a>
+            <a target="_blank" title="온라인이력서 새창에 열림" href="https://jhs0907.cafe24.com/profile/resume/application.html">온라인 이력서<FaAddressCard /></a>
+            {/* etc 파일안과 연동 여부 확인할것, 임시로 주소창 기입 */}
           </li>
           <li>
             <a target="_blank" title="Github 새창에 열림" href="https://github.com/ARISTAHS">GitHub<FaGithub /></a>

@@ -12,3 +12,10 @@ export const mySkill = [
   <SiAdobephotoshop/>,
   <SiGithub/>
 ]
+
+export const meDate ={
+  name : `JEONG HO SEOK`,
+  part : `Web Publisher & Front-end Developer`,
+  phone : `010-9120-1013`,
+  email : `paran0907@naver.com`
+}
