@@ -32,8 +32,8 @@ ul,li,ol {list-style: none;}
 h1,h2,h3,h4,h5,h6 {font-size:1rem; font-weight: 500; display:inline-block;}
 
 /* 버튼초기화 */
-button{border: 0;}
-
+button{border: 0; background: none;} 
+ 
 /* 반응형 이미지 */
 img, video{width:100%;}
 img {vertical-align: top;}

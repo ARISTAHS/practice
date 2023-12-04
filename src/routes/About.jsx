@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 // import '../style/About.scss';
 // import { FaAnglesDown } from "react-icons/fa6";
+import profile1 from '../etc/profile1.jpg';
+import profile2 from '../etc/profile2.jpg';
 import Content from '../components/AboutDate';
 import Button from '../components/AboutButton';
 
@@ -26,7 +28,7 @@ function About(){
 			
 			<div className={profileClass}>
 				<div className="imgContent">
-					{show ? (<img src="" alt="Image 2" />) : (<img src="" alt="Image 1" />)}
+					{show ? (<img className='profileImg2' src={profile2} alt="프로필사진2" />) : (<img className='profileImg1' src={profile1} alt="프로필사진1" />)}
 				</div>
 
 				<div className="textContent">
