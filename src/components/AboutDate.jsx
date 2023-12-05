@@ -30,17 +30,19 @@ function Content({ isText }) {
 
         <ul class="popol">
           <li>
-            <a target="_blank" title="스토리보드 새창에 열림" href="https://jhs0907.cafe24.com/profile/Storyboard.pdf">스토리보드<FaClipboard /></a>
+            <a target="_blank" title="스토리보드 새창에 열림" rel="noopener noreferrer" href="https://jhs0907.cafe24.com/profile/Storyboard.pdf">스토리보드<FaClipboard /></a>
+            {/* etc 파일안과 연동 여부 확인할것, 임시로 주소창 기입 */}
+            {/* 외부 링크 직접 연걸 */}
+          </li>
+          <li>
+            <a target="_blank" title="온라인이력서 새창에 열림" rel="noopener noreferrer" href="https://jhs0907.cafe24.com/profile/resume/application.html">온라인 이력서<FaAddressCard /></a>
             {/* etc 파일안과 연동 여부 확인할것, 임시로 주소창 기입 */}
           </li>
           <li>
-            <a target="_blank" title="온라인이력서 새창에 열림" href="https://jhs0907.cafe24.com/profile/resume/application.html">온라인 이력서<FaAddressCard /></a>
-            {/* etc 파일안과 연동 여부 확인할것, 임시로 주소창 기입 */}
-          </li>
-          <li>
-            <a target="_blank" title="Github 새창에 열림" href="https://github.com/ARISTAHS">GitHub<FaGithub /></a>
+            <a target="_blank" title="Github 새창에 열림" rel="noopener noreferrer" href="https://github.com/ARISTAHS">GitHub<FaGithub /></a>
           </li>
         </ul>
+        {/* 보안의 이유로 외부 링크를 직접 연결할시 rel="noopener noreferrer" 사용할것 */}
 
       </div>) 
       : (

@@ -7,7 +7,7 @@ function App() {
     <article id="wrap">
       <Home />
       <About />
-      {/* <PortFolio /> */}
+      <PortFolio />
     </article>
   );
 }
