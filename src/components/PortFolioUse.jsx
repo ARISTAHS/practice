@@ -1,4 +1,5 @@
 import React from "react";
+import '../style/PortFolio.scss';
 // import {SiGithub} from "react-icons/si";
 
 const PortFolioUse = (props) =>{

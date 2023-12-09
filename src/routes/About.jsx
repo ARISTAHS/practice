@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-// import '../style/About.scss';
+import '../style/About.scss';
 // import { FaAnglesDown } from "react-icons/fa6";
 import profile1 from '../etc/profile1.jpg';
 import profile2 from '../etc/profile2.jpg';

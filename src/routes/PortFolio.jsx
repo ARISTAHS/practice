@@ -12,11 +12,13 @@ const PortFolio = () => {
   }
 
   return(
-    <section id='section3'>
+    // background img를 css로 각기 기정 하는 방법 , useState로 하여 태그 안에 직접 style 지정하는 방법 존재. -> 전자로 진행.
+    <section id='section3' className={`background${pofol + 1}`}>
       <h3 className="hidden">포트폴리오</h3>
-      <div>
+  
         <ul className="tab-menu">
           {
+            // map 함수로 portFolioDate 배열 순회
             portFolioDate.map((data, index) => {
               return (
                 <li
@@ -42,7 +44,7 @@ const PortFolio = () => {
           host={portFolioDate[pofol].host}
           github={portFolioDate[pofol].github}
         />
-      </div>
+  
 
     </section>
   );
