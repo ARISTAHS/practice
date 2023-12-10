@@ -1,10 +1,24 @@
 import { SiHtml5, SiCss3, SiJavascript, SiJquery, SiBootstrap, SiWordpress, SiReact, SiSass, SiAdobephotoshop, SiGithub} from "react-icons/si";
 
-import pc from '../etc/samsungPc.png';
+import pc from '../etc/pcweb.png';
 import mobile from '../etc/mobile_fullshot.png';
 import bootstrap from '../etc/bootstrap_fullshot.png';
 import media from '../etc/media_fullshot.png';
 import wordpress from '../etc/wordpress_fullshot.png';
+import html from '../etc/html5.png';
+import css from '../etc/css3.png';
+import js from '../etc/javascript.png';
+import jq from '../etc/jquery.png';
+import aj from '../etc/ajax.png';
+import boot from '../etc/bootstrap.png';
+import word from '../etc/wordpress.png';
+import php from '../etc/php.png';
+import sql from '../etc/mysql.png';
+import kwah from '../etc/kwah.png';
+import w3c from '../etc/w3c.png';
+import photo from '../etc/photoshop.png';
+// import scss from '../etc/sass.png';
+// import react from '../etc/react.png';
 
 export const mySkill = [
   <SiHtml5/>,
@@ -39,7 +53,8 @@ export const portFolioDate = [
     detail3:`- 트렌드에 맞는 UI와 디자인으로 리뉴얼 진행` ,
     img : pc,
     host : `https://jhs0907.cafe24.com/`,
-    github : `https://github.com/ARISTAHS/w `,
+    github : `https://github.com/ARISTAHS/ `,
+    imageArray : [html, css, js, jq, aj, php, sql, kwah, w3c, photo],
   },
   {
     id : 2,
@@ -52,6 +67,7 @@ export const portFolioDate = [
     img : mobile,
     host : `https://jhs0907.cafe24.com/mobile/`,
     github : `https://github.com/ARISTAHS/`,
+    imageArray : [html, css, js, jq, php, sql, kwah, w3c, photo],
   },
   {
     id : 3,
@@ -64,6 +80,7 @@ export const portFolioDate = [
     img : media,
     host : `https://jhs0907.cafe24.com/media/`,
     github : `https://github.com/ARISTAHS/`,
+    imageArray : [html, css, js, jq, kwah, w3c, photo],
   },
   {
     id : 4,
@@ -76,6 +93,7 @@ export const portFolioDate = [
     img : bootstrap,
     host : `https://jhs0907.cafe24.com/bootstrap/`,
     github : `https://github.com/ARISTAHS/`,
+    imageArray : [html, css, js, jq, boot, kwah, w3c, photo],
   },
   {
     id : 5,
@@ -88,14 +106,19 @@ export const portFolioDate = [
     img : wordpress,
     host : `https://jhs0907.cafe24.com/wordpress/`,
     github : `https://github.com/ARISTAHS/`,
+    imageArray : [html, css, js, jq, word, kwah, w3c, photo],
   },
   // {
   //   id : 6,
-  //   title : `CRA Profile`,
+  //   title : `Profile react 리뉴얼`,
   //   type : `Create React App`,
   //   time : `약 1달`,
+  //   detail1:`- 웹사이트 제작 도구인 워드프레스 사용`,
+  //   detail2:`- SCSS와 react-icons 등을 활용하여 제작`,
+  //   detail3:`- CRA 등등등`,
   //   img : ``,
-  //   host : ``,
-  //   github : `https://github.com/ARISTAHS/practice/`
+  //   host : `https://jhs0907.cafe24.com/practice/`,
+  //   github : `https://github.com/ARISTAHS/practice/`,
+  //   imageArray : [html, css, js, scss, react, photo],
   // },
 ]

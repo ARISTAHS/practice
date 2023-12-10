@@ -1,1 +1,149 @@
 @use './common.scss';
+
+#section3{
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Noto Sans KR', sans-serif;
+ 
+  &.pf-content1{
+    background: url(../etc/pcback.png) 50% 50% no-repeat;
+    background-size: cover;
+  }
+  &.pf-content2{
+    background: url(../etc/mobileback.png) 50% 50% no-repeat;
+    background-size: cover;
+    .content-inner{
+      .port-img{
+        text-align: center;
+        img{height: 850px; width: 400px; max-width: 400px;}
+      }
+    }
+  }
+  &.pf-content3{
+    background: url(../etc/mediaback.png) 50% 50% no-repeat;
+    background-size: cover;
+  }
+  &.pf-content4{
+    background: url(../etc/bootback.png) 50% 50% no-repeat;
+    background-size: cover;
+  }
+  &.pf-content5{
+    background: url(../etc/wordback.png) 50% 50% no-repeat;
+    background-size: cover;
+  }
+  .tab-area{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    .tab-menu{
+      display: flex;
+      gap: 150px;
+      border: 1px solid white;
+      li{ 
+        button{
+          cursor: pointer;
+          color: #fff;
+          font-size: 16px;
+          font-weight: 400;
+          font-family: 'Noto Sans KR', sans-serif;
+        }
+      }
+    }
+  }
+
+  //PortFolioUse css
+  .content-inner{
+    display: grid;
+    grid-template-columns: 650px auto;
+    grid-column-gap: 100px;
+    .port-img{
+      img{
+        width: 650px;
+      }
+    }
+    .info-area{
+
+      .detail-info{
+        dt{
+          &.info-title{
+
+          }
+        }
+        dd{
+          &:nth-of-type(1){}
+          &:nth-of-type(2){}
+          &:nth-of-type(3){}
+          &:nth-of-type(4){}
+          &:nth-of-type(5){}
+        }
+      }
+      .colors{
+        margin-bottom:5%;
+        dt{
+          font-size: 1.3em;
+          font-weight: 700;
+        }
+        dd{
+          width: 30px;
+          height: 30px;
+          border-radius: 100%;
+          margin: 4px 16px 0 0;
+          display: inline-block;
+          &:nth-of-type(1){
+            background: #03509f;
+            border: 1px solid #03509f;
+          }
+          &:nth-of-type(2){    
+            background: #fff;
+            border: 1px solid #ececec;
+          }
+          &:nth-of-type(3){
+            background: #333;
+            border: 1px solid #333;
+          }
+        }
+      }
+      .skill-img{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 5%;
+        li{
+          text-align: center;
+          img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #fff;
+          }
+        }
+      }
+      .url-box{
+        a{
+          &.more{
+            display: inline-block;
+            font-weight: 700;
+            font-size: 1em;
+            padding: 12px 50px 11px;
+            background: #fff;
+            border-radius: 100px;
+            border: 1px solid #1979bd;
+            color: #1979bd;
+            margin-top: 24px;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+}

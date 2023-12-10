@@ -13,26 +13,27 @@ const PortFolio = () => {
 
   return(
     // background img를 css로 각기 기정 하는 방법 , useState로 하여 태그 안에 직접 style 지정하는 방법 존재. -> 전자로 진행.
-    <section id='section3' className={`background${pofol + 1}`}>
+    <section id='section3' className={`pf-content${pofol + 1}`}>
       <h3 className="hidden">포트폴리오</h3>
-  
-        <ul className="tab-menu">
-          {
-            // map 함수로 portFolioDate 배열 순회
-            portFolioDate.map((data, index) => {
-              return (
-                <li
-                key={index}
-                onClick={() => {current(index)} }
-                className={pofol === index ? "current" : ""}>
-                  <button>
-                    {data.type}
-                  </button>
-                </li>
-              )
-            })
-          }
-        </ul>
+        <div className='tab-area'>
+          <ul className="tab-menu">
+            {
+              // map 함수로 portFolioDate 배열 순회
+              portFolioDate.map((data, index) => {
+                return (
+                  <li
+                  key={index}
+                  onClick={() => {current(index)} }
+                  className={pofol === index ? "current" : ""}>
+                    <button>
+                      {data.type}
+                    </button>
+                  </li>
+                )
+              })
+            }
+          </ul>
+        </div>
         <PortFolioUse 
           title={portFolioDate[pofol].title}
           detail1={portFolioDate[pofol].detail1}
@@ -42,15 +43,13 @@ const PortFolio = () => {
           time={portFolioDate[pofol].time}
           img={portFolioDate[pofol].img}
           host={portFolioDate[pofol].host}
-          github={portFolioDate[pofol].github}
+          imageArray={portFolioDate[pofol].imageArray}
+          // github={portFolioDate[pofol].github}
         />
   
-
     </section>
   );
 
 }
-
-
 
 export default PortFolio;

@@ -1,15 +1,15 @@
 import React from "react";
 import '../style/PortFolio.scss';
-// import {SiGithub} from "react-icons/si";
 
 const PortFolioUse = (props) =>{
+
   return(
-    <div className="content">
-      <div className="port_img">
+    <div className="content-inner">
+      <div className="port-img">
         <img src={props.img} alt="포트폴리오 대표이미지" />
       </div>
-      <div className="con_info">
-        <dl>
+      <div className="info-area">
+        <dl className="detail-info">
           <dt className="info-title">{props.title}</dt>
           <dd>{props.detail1}</dd>
           <dd>{props.detail2}</dd>
@@ -23,10 +23,16 @@ const PortFolioUse = (props) =>{
           <dd className="color2"></dd>
           <dd className="color3"></dd>
         </dl>
+        <ul className="skill-img">
+          {props.imageArray.map((image, index) => (
+            <li key={index}>
+              <img src={image} alt={`사용된 스킬 이미지 ${index + 1}`} />
+            </li>
+          ))}
+        </ul>
         
-        <div className="url_box">
-          <a href={props.host} target="_blank" rel="noopener noreferrer"></a>
-          <a href={props.github} target="_blank" rel="noopener noreferrer"></a>
+        <div className="url-box">
+          <a className="more" href={props.host} target="_blank" rel="noopener noreferrer">View more</a>
         </div>
       </div>
     </div>
