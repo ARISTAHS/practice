@@ -7,7 +7,6 @@
   font-size: 16px;
   font-weight: 400;
   font-family: 'Noto Sans KR', sans-serif;
- 
   &.pf-content1{
     background: url(../etc/pcback.png) 50% 50% no-repeat;
     background-size: cover;
@@ -25,6 +24,18 @@
   &.pf-content3{
     background: url(../etc/mediaback.png) 50% 50% no-repeat;
     background-size: cover;
+    .content-inner{
+      .info-area{
+        .url-box{
+          a{
+            &.more{
+              color: #95d5f5;
+              border: 1px solid #95d5f5;
+            }
+          }
+        }
+      }
+    }
   }
   &.pf-content4{
     background: url(../etc/bootback.png) 50% 50% no-repeat;
@@ -33,6 +44,18 @@
   &.pf-content5{
     background: url(../etc/wordback.png) 50% 50% no-repeat;
     background-size: cover;
+    .content-inner{
+      .info-area{
+        .url-box{
+          a{
+            &.more{
+              color: #cc0033;
+              border: 1px solid #cc0033;
+            }
+          }
+        }
+      }
+    }
   }
   .tab-area{
     position: absolute;
@@ -42,9 +65,15 @@
     .tab-menu{
       display: flex;
       gap: 150px;
-      border: 1px solid white;
+      // border: 1px solid white;
+      width: 1200px;
+      align-items: center;
+      justify-content: center;
       li{ 
+        height: 50px;
+        &:hover{color: #1979bd;}
         button{
+          height: 100%;
           cursor: pointer;
           color: #fff;
           font-size: 16px;
@@ -60,6 +89,7 @@
     display: grid;
     grid-template-columns: 650px auto;
     grid-column-gap: 100px;
+    align-items: center;
     .port-img{
       img{
         width: 650px;
@@ -67,83 +97,110 @@
     }
     .info-area{
 
-      .detail-info{
-        dt{
-          &.info-title{
-
+      dl{
+        margin-bottom:15px;
+        &.detail-info{
+          dt{
+            margin-bottom: 5px;
+            &.info-title{
+              font-size: 3rem;
+              font-weight: 700;
+              font-style: italic;
+            }
+            span{
+              font-size: 1.1rem; 
+              font-weight: 400;
+              background: linear-gradient(to bottom, transparent 50%, #4867e8d9 50%) 0 -7px;
+            }
+          }
+          dd{
+            padding: 5px 0;
+            font-size: 1.1rem;
+            // &:nth-of-type(1){}
+            // &:nth-of-type(2){}
+            // &:nth-of-type(3){}
           }
         }
-        dd{
-          &:nth-of-type(1){}
-          &:nth-of-type(2){}
-          &:nth-of-type(3){}
-          &:nth-of-type(4){}
-          &:nth-of-type(5){}
-        }
-      }
-      .colors{
-        margin-bottom:5%;
-        dt{
-          font-size: 1.3em;
-          font-weight: 700;
-        }
-        dd{
-          width: 30px;
-          height: 30px;
-          border-radius: 100%;
-          margin: 4px 16px 0 0;
-          display: inline-block;
-          &:nth-of-type(1){
-            background: #03509f;
-            border: 1px solid #03509f;
+        &.term{
+          dt{
+            font-size: 1.3em;
+            font-weight: 700;
           }
-          &:nth-of-type(2){    
-            background: #fff;
-            border: 1px solid #ececec;
-          }
-          &:nth-of-type(3){
-            background: #333;
-            border: 1px solid #333;
+          dd{
+            padding: 5px 0;
           }
         }
-      }
-      .skill-img{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 5%;
-        li{
-          text-align: center;
-          img{
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: #fff;
+        &.colors{
+         
+          dt{
+            font-size: 1.3em;
+            font-weight: 700;
+          }
+          dd{
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            margin: 5px 15px 0 0;
+            display: inline-block;
+            &.color1{
+              background: #03509f;
+              border: 1px solid #03509f;
+            }
+            &.color2{    
+              background: #fff;
+              border: 1px solid #ececec;
+            }
+            &.color3{
+              background: #333;
+              border: 1px solid #333;
+            }
+          }
+        }
+        &.use-skill{
+        
+          dt{
+            font-size: 1.3em;
+            font-weight: 700;
+          }
+          dd{
+            padding: 10px 0;
+            .skill-img{
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              gap: 10px;
+              // margin-bottom: 5%;
+              li{
+                width: 45px;
+                height: 45px;
+                text-align: center;
+                img{
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  background-color: #fff;
+                }
+              }
+            }
           }
         }
       }
       .url-box{
+        display: inline-block;
         a{
           &.more{
             display: inline-block;
             font-weight: 700;
             font-size: 1em;
-            padding: 12px 50px 11px;
+            padding: 10px 35px;
             background: #fff;
             border-radius: 100px;
             border: 1px solid #1979bd;
             color: #1979bd;
-            margin-top: 24px;
+            // margin-top: 24px;
           }
         }
       }
     }
   }
-
-
-
-
-
-
 }
