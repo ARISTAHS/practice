@@ -26,6 +26,22 @@
     background-size: cover;
     .content-inner{
       .info-area{
+        .colors{
+          dd{
+            &.color1{
+              background: #95d5f5;
+              border: 1px solid #95d5f5;
+            }
+            &.color2{
+              background: #000;
+              border: 1px solid #000;
+            }
+            &.color3{   
+              background: #fff;
+              border: 1px solid #ececec;
+            }
+          }
+        }
         .url-box{
           a{
             &.more{
@@ -40,12 +56,41 @@
   &.pf-content4{
     background: url(../etc/bootback.png) 50% 50% no-repeat;
     background-size: cover;
+    .content-inner{
+      .info-area{
+        .colors{
+          dd{
+            &.color1{
+              background: #fff;
+              border: 1px solid #ececec;
+            }
+            &.color2{
+              background: #337ab7;
+              border: 1px solid #337ab7;
+            }
+            &.color3{display: none;}
+          }
+        }
+      }
+    }
   }
   &.pf-content5{
     background: url(../etc/wordback.png) 50% 50% no-repeat;
     background-size: cover;
     .content-inner{
       .info-area{
+        .colors{
+          dd{
+            &.color1{
+              background: #cc0033;
+              border: 1px solid #cc0033;
+            }
+            &.color3{
+              background: #666666;
+              border: 1px solid #666666;
+            }
+          }
+        }
         .url-box{
           a{
             &.more{
