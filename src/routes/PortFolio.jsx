@@ -8,12 +8,13 @@ const PortFolio = () => {
   const [pofol, setPofol] = useState(0);
 
   const current = (index) => {
+    console.log('Clicked Index:', index); // 추가된 부분
     setPofol(index);
   }
 
   return(
     // background img를 css로 각기 기정 하는 방법 , useState로 하여 태그 안에 직접 style 지정하는 방법 존재. -> 전자로 진행.
-    <section id='section3' className={`pf-content${pofol + 1}`}>
+    <section id='Portfolio' className={`pf-content${pofol + 1}`}>
       <h3 className="hidden">포트폴리오</h3>
         <div className='tab-area'>
           <ul className="tab-menu">

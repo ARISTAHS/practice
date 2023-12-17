@@ -49,6 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 /* 버튼초기화 */
 button {
   border: 0;
+  background: none;
 }
 
 /* 반응형 이미지 */
@@ -85,4 +86,218 @@ section {
   justify-content: space-around;
   align-items: center;
   position: relative;
+}
+
+#Portfolio {
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+}
+#Portfolio.pf-content1 {
+  background: url(../etc/pcback.png) 50% 50% no-repeat;
+  background-size: cover;
+}
+#Portfolio.pf-content2 {
+  background: url(../etc/mobileback.png) 50% 50% no-repeat;
+  background-size: cover;
+}
+#Portfolio.pf-content2 .content-inner .port-img {
+  text-align: center;
+}
+#Portfolio.pf-content2 .content-inner .port-img img {
+  height: 850px;
+  width: 400px;
+  max-width: 400px;
+}
+#Portfolio.pf-content3 {
+  background: url(../etc/mediaback.png) 50% 50% no-repeat;
+  background-size: cover;
+}
+#Portfolio.pf-content3 .content-inner .info-area .colors dd.color1 {
+  background: #95d5f5;
+  border: 1px solid #95d5f5;
+}
+#Portfolio.pf-content3 .content-inner .info-area .colors dd.color2 {
+  background: #000;
+  border: 1px solid #000;
+}
+#Portfolio.pf-content3 .content-inner .info-area .colors dd.color3 {
+  background: #fff;
+  border: 1px solid #ececec;
+}
+#Portfolio.pf-content3 .content-inner .info-area .url-box a.more {
+  color: #95d5f5;
+  border: 1px solid #95d5f5;
+  transition: all 0.5s;
+}
+#Portfolio.pf-content3 .content-inner .info-area .url-box a.more:hover {
+  color: #fff;
+  background-color: #95d5f5;
+}
+#Portfolio.pf-content4 {
+  background: url(../etc/bootback.png) 50% 50% no-repeat;
+  background-size: cover;
+}
+#Portfolio.pf-content4 .content-inner .info-area .colors dd.color1 {
+  background: #fff;
+  border: 1px solid #ececec;
+}
+#Portfolio.pf-content4 .content-inner .info-area .colors dd.color2 {
+  background: #337ab7;
+  border: 1px solid #337ab7;
+}
+#Portfolio.pf-content4 .content-inner .info-area .colors dd.color3 {
+  display: none;
+}
+#Portfolio.pf-content5 {
+  background: url(../etc/wordback.png) 50% 50% no-repeat;
+  background-size: cover;
+}
+#Portfolio.pf-content5 .content-inner .info-area .colors dd.color1 {
+  background: #cc0033;
+  border: 1px solid #cc0033;
+}
+#Portfolio.pf-content5 .content-inner .info-area .colors dd.color3 {
+  background: #666666;
+  border: 1px solid #666666;
+}
+#Portfolio.pf-content5 .content-inner .info-area .url-box a.more {
+  color: #cc0033;
+  border: 1px solid #cc0033;
+  transition: all 0.5s;
+}
+#Portfolio.pf-content5 .content-inner .info-area .url-box a.more:hover {
+  color: #fff;
+  background-color: #cc0033;
+}
+#Portfolio .tab-area {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#Portfolio .tab-area .tab-menu {
+  display: flex;
+  gap: 150px;
+  width: 1200px;
+  align-items: center;
+  justify-content: center;
+}
+#Portfolio .tab-area .tab-menu li {
+  height: 50px;
+}
+#Portfolio .tab-area .tab-menu li:hover {
+  color: #1979bd;
+}
+#Portfolio .tab-area .tab-menu li button {
+  height: 100%;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+}
+#Portfolio .content-inner {
+  display: grid;
+  grid-template-columns: 650px 700px;
+  grid-column-gap: 100px;
+  align-items: center;
+}
+#Portfolio .content-inner .port-img img {
+  width: 650px;
+}
+#Portfolio .content-inner .info-area dl {
+  margin-bottom: 15px;
+}
+#Portfolio .content-inner .info-area dl.detail-info dt {
+  margin-bottom: 5px;
+}
+#Portfolio .content-inner .info-area dl.detail-info dt.info-title {
+  font-size: 3rem;
+  font-weight: 700;
+  font-style: italic;
+}
+#Portfolio .content-inner .info-area dl.detail-info dt span {
+  font-size: 1.1rem;
+  font-weight: 400;
+  background: linear-gradient(to bottom, transparent 50%, rgba(72, 103, 232, 0.8509803922) 50%) 0 -7px;
+}
+#Portfolio .content-inner .info-area dl.detail-info dd {
+  padding: 5px 0;
+  font-size: 1.1rem;
+}
+#Portfolio .content-inner .info-area dl.term dt {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+#Portfolio .content-inner .info-area dl.term dd {
+  padding: 5px 0;
+}
+#Portfolio .content-inner .info-area dl.colors dt {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+#Portfolio .content-inner .info-area dl.colors dd {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin: 5px 15px 0 0;
+  display: inline-block;
+}
+#Portfolio .content-inner .info-area dl.colors dd.color1 {
+  background: #03509f;
+  border: 1px solid #03509f;
+}
+#Portfolio .content-inner .info-area dl.colors dd.color2 {
+  background: #fff;
+  border: 1px solid #ececec;
+}
+#Portfolio .content-inner .info-area dl.colors dd.color3 {
+  background: #333;
+  border: 1px solid #333;
+}
+#Portfolio .content-inner .info-area dl.use-skill dt {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+#Portfolio .content-inner .info-area dl.use-skill dd {
+  padding: 10px 0;
+}
+#Portfolio .content-inner .info-area dl.use-skill dd .skill-img {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+#Portfolio .content-inner .info-area dl.use-skill dd .skill-img li {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+}
+#Portfolio .content-inner .info-area dl.use-skill dd .skill-img li img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+#Portfolio .content-inner .info-area .url-box {
+  display: inline-block;
+}
+#Portfolio .content-inner .info-area .url-box a.more {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1em;
+  padding: 10px 35px;
+  background: #fff;
+  border-radius: 100px;
+  border: 1px solid #1979bd;
+  color: #1979bd;
+  transition: all 0.5s;
+}
+#Portfolio .content-inner .info-area .url-box a.more:hover {
+  color: #fff;
+  background-color: #1979bd;
 }/*# sourceMappingURL=PortFolio.css.map */

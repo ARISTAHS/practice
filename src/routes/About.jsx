@@ -23,7 +23,7 @@ function About(){
 	const profileClass = useProfileClass(show);
 
   return (
-    <section id="section2">
+    <section id="About">
 			<h3 className="hidden">Profile</h3>
 			
 			<div className={profileClass}>

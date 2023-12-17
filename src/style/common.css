@@ -49,6 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 /* 버튼초기화 */
 button {
   border: 0;
+  background: none;
 }
 
 /* 반응형 이미지 */

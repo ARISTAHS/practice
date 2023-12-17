@@ -1,0 +1,36 @@
+header{
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 2;
+  transition: all 0.5s;
+  &.active{
+    background-color: #f9f8fd;
+  }
+  .headerArea{
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 0 auto;
+    h1{
+      color: blue;
+      font-size: var(--nav-font-size);
+    }
+    nav{
+      ul{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        font-size: var(--nav-font-size);
+        li{
+          // color: blue;
+          cursor: pointer;
+          a{
+            color: blue;
+          }
+        }
+      }
+    }
+  }
+}

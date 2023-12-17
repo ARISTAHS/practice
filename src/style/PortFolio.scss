@@ -1,6 +1,6 @@
 @use './common.scss';
 
-#section3{
+#Portfolio{
   flex-direction: column;
   justify-content: center;
   color: #fff;
@@ -47,6 +47,11 @@
             &.more{
               color: #95d5f5;
               border: 1px solid #95d5f5;
+              transition: all .5s;
+              &:hover{
+                color: #fff;
+                background-color: #95d5f5;
+              }
             }
           }
         }
@@ -96,6 +101,11 @@
             &.more{
               color: #cc0033;
               border: 1px solid #cc0033;
+              transition: all .5s;
+              &:hover{
+                color: #fff;
+                background-color: #cc0033;
+              }
             }
           }
         }
@@ -132,7 +142,7 @@
   //PortFolioUse css
   .content-inner{
     display: grid;
-    grid-template-columns: 650px auto;
+    grid-template-columns: 650px 700px;
     grid-column-gap: 100px;
     align-items: center;
     .port-img{
@@ -242,7 +252,12 @@
             border-radius: 100px;
             border: 1px solid #1979bd;
             color: #1979bd;
+            transition: all .5s;
             // margin-top: 24px;
+            &:hover{
+              color: #fff;
+              background-color: #1979bd;
+            }
           }
         }
       }

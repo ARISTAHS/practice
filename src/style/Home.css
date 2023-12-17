@@ -49,6 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 /* 버튼초기화 */
 button {
   border: 0;
+  background: none;
 }
 
 /* 반응형 이미지 */
@@ -87,19 +88,19 @@ section {
   position: relative;
 }
 
-#section1 {
+#Home {
   background-color: #999;
 }
-#section1 div.home p {
+#Home div.home p {
   font-size: 3.5em;
   letter-spacing: 2px;
   color: #f8f8f8;
   text-align: center;
 }
-#section1 div.home p strong {
+#Home div.home p strong {
   background: linear-gradient(to bottom, transparent 50%, rgba(72, 103, 232, 0.8509803922) 50%) 0 -7px;
 }
-#section1 a.scrollDown {
+#Home a.scrollDown {
   position: absolute;
   left: 50%;
   bottom: 70px;
@@ -108,12 +109,12 @@ section {
   font-style: italic;
   color: #fff;
   z-index: 3;
+  cursor: pointer;
 }
-#section1 a.scrollDown .downIcon {
+#Home a.scrollDown .downIcon {
   display: inline-block;
-  animation: scrollDown infinite 0.7s linear;
+  animation: scrollDown 0.7s infinite linear;
 }
-
 @keyframes scrollDown {
   0% {
     transform: translateY(0);

@@ -1,0 +1,33 @@
+header {
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 2;
+  transition: all 0.5s;
+}
+header.active {
+  background-color: #f9f8fd;
+}
+header .headerArea {
+  display: flex;
+  justify-content: space-between;
+  width: 1280px;
+  margin: 0 auto;
+}
+header .headerArea h1 {
+  color: blue;
+  font-size: var(--nav-font-size);
+}
+header .headerArea nav ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  font-size: var(--nav-font-size);
+}
+header .headerArea nav ul li {
+  cursor: pointer;
+}
+header .headerArea nav ul li a {
+  color: blue;
+}/*# sourceMappingURL=Gnb.css.map */
