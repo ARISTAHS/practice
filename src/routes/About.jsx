@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import '../style/About.scss';
 // import { FaAnglesDown } from "react-icons/fa6";
-import profile1 from '../etc/profile1.jpg';
+import profile1 from '../etc/self-photo.png';
 import profile2 from '../etc/profile2.jpg';
 import Content from '../components/AboutDate';
 import Button from '../components/AboutButton';

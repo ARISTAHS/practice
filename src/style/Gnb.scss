@@ -1,5 +1,5 @@
 header{
-  padding: 2rem;
+  padding: 1rem;
   width: 100%;
   box-sizing: border-box;
   position: fixed;
@@ -7,14 +7,16 @@ header{
   transition: all 0.5s;
   &.active{
     background-color: #f9f8fd;
+    border-bottom: 1px solid #efefef;
   }
   .headerArea{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 1280px;
     margin: 0 auto;
     h1{
-      color: blue;
+      color: #5470D2;
       font-size: var(--nav-font-size);
     }
     nav{
@@ -22,12 +24,24 @@ header{
         display: flex;
         gap: 2rem;
         justify-content: center;
+        align-items: center;
         font-size: var(--nav-font-size);
         li{
           // color: blue;
           cursor: pointer;
           a{
-            color: blue;
+            color: #999;
+            &.tab{
+              color:#5470D2;
+              &::after{
+                content: '';
+                display: inline-block;
+                width: 100%;
+                height: 3px;
+                background: #6A3D00;
+                margin-bottom: 10px;
+              }
+            }
           }
         }
       }

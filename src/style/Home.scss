@@ -3,7 +3,9 @@
 
 #Home{
   //css 확인차 백그라운드 임시 적용
-  background-color: #999;
+  // background-color: #999;
+  background: url(../etc/macbook1_2.png) 50% no-repeat;
+  background-size: cover;
   div{
     &.home{
       p{

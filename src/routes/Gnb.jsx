@@ -28,6 +28,8 @@ const Gnb = () => {
                   smooth={true}
                   offset={-70}
                   duration={500}
+                  activeClass="tab"
+                  //활성화 된 tab 클래스 추가
                   // href={`#${navlist}`}
                   >{navlist}</Link></h3></li>)
               })
