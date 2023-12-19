@@ -5,10 +5,10 @@ function Button({show , onClick}) {
   return(
     <button onClick={onClick}>
       {show ? (
-          <span className='preClick'>돌아가기</span>
+          <span className='preClick'></span>
         ) : 
         (
-          <span className='nextClick'> 자세히 보기</span>
+          <span className='nextClick'></span>
         )}
     </button>
   );
