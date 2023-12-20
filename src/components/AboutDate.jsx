@@ -47,7 +47,7 @@ function Content({ isText }) {
       </div>) 
       : (
         <p className="introShort">안녕하세요, 정호석입니다. <br/>
-        보시는 사이트는 Creact React App과 다양한 React 라이브러리를 <br />
+        보시는 사이트는 Create React App과 다양한 React 라이브러리를 <br />
         사용하여 저의 기존 프로필을 <b>리뉴얼</b>한 포트폴리오입니다. <br />
         <strong>소중한 시간</strong>으로 저의 포트폴리오를 봐주셔서 감사합니다.</p>
       )}
