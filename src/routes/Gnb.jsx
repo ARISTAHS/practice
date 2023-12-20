@@ -16,7 +16,7 @@ const Gnb = () => {
   return(
     <header className={scroll ? "active" : ""}>
       <div className='headerArea'>
-        <h1>정호석</h1>
+        <h1 id="name">JEONG HO SEOK</h1>
         <nav>
           <h2 className="hidden">Gnb</h2>
           <ul>

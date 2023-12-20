@@ -2,8 +2,6 @@
 @use'./common.scss';
 
 #Home{
-  //css 확인차 백그라운드 임시 적용
-  // background-color: #999;
   background: url(../etc/macbook1_2.png) 50% no-repeat;
   background-size: cover;
   div{
@@ -49,29 +47,3 @@
   }
   
 }
-
-
-// keyframe animation 설정 코드
-// @mixin animation ($delay, $duration, $timing-function, $name) {
-//   animation-delay: $delay;
-//   animation-duration: $duration;
-//   animation-name: $name;
-//   animation-timing-function: $timing-function;
-//   animation-iteration-count: infinite;
-// }
-
-// @mixin keyframe ($scrollDown)  {
-//   @keyframes #{$scrollDown} {
-//     @content;
-//   }
-// }
-// @include keyframe (scrollDown) {
-//   0% { 
-//     transform: translateY(0); 
-//     opacity: 1; 
-//   }
-//   100% { 
-//     transform: translateY(10px); 
-//     opacity: 0; 
-//   }
-// }
