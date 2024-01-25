@@ -47,6 +47,7 @@ table{border-collapse: collapse;}
 
 // 공통 section 
 section{
+  min-width: 1200px;
   height: 100vh;
   display: flex;
   justify-content: space-around;
