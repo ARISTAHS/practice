@@ -1,9 +1,9 @@
 import React from "react";
 import '../style/About.scss'
 import { GiFencer } from "react-icons/gi";
-import { FaClipboard, FaAddressCard, FaGithub } from "react-icons/fa6";
+import { FaClipboard, FaClipboardCheck, FaGithub } from "react-icons/fa6";
 import skillIcon from "./skill";
-import {meDate} from "./Date";
+import {meDate} from "./Dates";
 
 
 function Content({ isText }) {
@@ -11,7 +11,7 @@ function Content({ isText }) {
     <div>{isText ? 
       (
       <div className="detailProfile">
-        <div class="name">{meDate.name}</div>
+        <div className="name">{meDate.name}</div>
         <dl>
           <dt><GiFencer/>CONTACT</dt>
           <dd>{meDate.phone} // {meDate.email}</dd>
@@ -28,14 +28,14 @@ function Content({ isText }) {
           </dd>
         </dl>
 
-        <ul class="popol">
+        <ul className="popol">
           <li>
             <a target="_blank" title="스토리보드 새창에 열림" rel="noopener noreferrer" href="https://jhs0907.cafe24.com/profile/Storyboard.pdf">스토리보드<FaClipboard /></a>
             {/* etc 파일안과 연동 여부 확인할것, 임시로 주소창 기입 */}
             {/* 외부 링크 직접 연걸 */}
           </li>
           <li>
-            <a target="_blank" title="온라인이력서 새창에 열림" rel="noopener noreferrer" href="https://jhs0907.cafe24.com/profile/resume/application.html">온라인 이력서<FaAddressCard /></a>
+            <a target="_blank" title="온라인이력서 새창에 열림" rel="noopener noreferrer" href="https://jhs0907.cafe24.com/profile/resume/application.html">온라인 이력서<FaClipboardCheck /></a>
             {/* etc 파일안과 연동 여부 확인할것, 임시로 주소창 기입 */}
           </li>
           <li>

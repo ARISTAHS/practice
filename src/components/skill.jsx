@@ -1,5 +1,5 @@
 import React from "react";
-import { mySkill } from "./Date";
+import { mySkill } from "./Dates";
 
 function skillIcon() {
   return(
