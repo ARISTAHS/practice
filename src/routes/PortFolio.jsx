@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import '../style/PortFolio.scss';
-import {portFolioDate} from '../components/Date';
+import {portFolioDate} from '../components/Dates';
 import PortFolioUse from '../components/PortFolioUse';
 
 // 화살표 함수 표현식 사용 
