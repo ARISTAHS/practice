@@ -5,4 +5,4 @@ jsx 와 scss 사용//
 React의 Hook과 Javascript, SCSS를 연습 위함  
 
 
-https://aristahs.github.io/practice/
+https://aristahs.github.io/
