@@ -109,9 +109,8 @@ section {
   text-align: center;
 }
 #Portfolio.pf-content2 .content-inner .port-img img {
-  height: 850px;
-  width: 400px;
-  max-width: 400px;
+  height: auto;
+  width: 200px;
 }
 #Portfolio.pf-content3 {
   background: url(../etc/mediaback.png) 50% 50% no-repeat;
@@ -176,7 +175,7 @@ section {
 }
 #Portfolio .tab-area {
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -207,8 +206,11 @@ section {
   grid-column-gap: 100px;
   align-items: center;
 }
+#Portfolio .content-inner .port-img {
+  text-align: center;
+}
 #Portfolio .content-inner .port-img img {
-  width: 650px;
+  width: 450px;
 }
 #Portfolio .content-inner .info-area dl {
   margin-bottom: 15px;

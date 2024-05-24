@@ -1,7 +1,7 @@
 @use './common.scss';
 
 #About{
-  max-width: 1500px;
+  // max-width: 1500px;
   background-color: #EFEFEF;
   overflow: hidden;
   // background: url(../etc/about_back.png) 50% 30% no-repeat;
@@ -36,8 +36,8 @@
           box-shadow: 5px 5px 20px #888888;
         }
         &.profileImg2{
-          width: 100%;
-          height: 800px;
+          width: 55%;
+          height: auto;
           border-radius: 40% 30% 40% 30% / 45% 70% 45% 70%;
         }
       }
