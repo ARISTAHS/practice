@@ -6,6 +6,7 @@ import Footer from './routes/Footer.jsx';
 
 function App() {
   return (
+    // Intro 를 추가 할 계획.
     <article id="wrap">
       <Gnb />
       <Home />

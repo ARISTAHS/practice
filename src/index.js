@@ -1,13 +1,8 @@
 import React from 'react';
 import { HashRouter} from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
-// import './index.css';
-// import './style/common.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
-// import Header from './routes/Header.jsx';
-// import Footer from './routes/Footer.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
